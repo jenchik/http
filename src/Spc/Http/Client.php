@@ -1,15 +1,17 @@
-<?php namespace Vinelab\Http;
+<?php namespace Spc\Http;
 
-Class Client {
-
+Class Client
+{
 	/**
 	 * Performs a GET reuqest
+     *
 	 * @param  URL|Array $request
-	 * @return \Vinelab\Http\Response
+	 * @return \Spc\Http\Response
 	 */
 
 	/**
 	 * Validates passed request parameters
+     *
 	 * @param  URL|Array $request
 	 * @return Boolean
 	 */
@@ -19,11 +21,12 @@ Class Client {
 	}
 
 	/**
-	 * Makes a Vinelab\Http\Request object out of an array
+	 * Makes a Spc\Http\Request object out of an array
+     *
 	 * @param  array|string $request
-	 * @return Vinelab\Http\Request
+	 * @return Spc\Http\Request
 	 */
-	private function requestInstance($request)
+	protected function requestInstance($request)
 	{
 		return new Request($request);
 	}

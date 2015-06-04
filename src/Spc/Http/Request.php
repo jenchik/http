@@ -1,6 +1,8 @@
-<?php namespace Vinelab\Http;
+<?php
 
-use Vinelab\Http\Contracts\RequestInterface;
+namespace Spc\Http;
+
+use Spc\Http\Contracts\RequestInterface;
 
 Class Request implements RequestInterface{
 
@@ -172,5 +174,4 @@ Class Request implements RequestInterface{
 
 		return $cURLVersion;
 	}
-
 }

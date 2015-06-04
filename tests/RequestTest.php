@@ -1,12 +1,12 @@
 <?php
 
-use Vinelab\Http\Request;
+use Spc\Http\Request;
 
 class RequestTest extends PHPUnit_Framework_TestCase {
 
     public function testInitializingEmptyRequest()
     {
-        $this->assertInstanceOf('Vinelab\Http\Request', new Request);
+        $this->assertInstanceOf('Spc\Http\Request', new Request);
     }
 
     public function testGettingCurlHttpVersion()

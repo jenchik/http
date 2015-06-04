@@ -1,9 +1,11 @@
-<?php namespace Vinelab\Http;
+<?php
 
-use Vinelab\Http\Contracts\ResponseInterface;
+namespace Spc\Http;
 
-Class Response implements ResponseInterface {
+use Spc\Http\Contracts\ResponseInterface;
 
+Class Response implements ResponseInterface
+{
 	/**
 	 * The result coming from curl_getinfo()
 	 * @var Array
@@ -46,6 +48,7 @@ Class Response implements ResponseInterface {
 
 	/**
 	 * Initiates a request
+     *
 	 * @param  cURL Handle $cURL
 	 * @return Response
 	 */

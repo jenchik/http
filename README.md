@@ -1,8 +1,4 @@
-![build status](https://travis-ci.org/Vinelab/http.png?branch=master "build status")
-
-[![Dependency Status](https://www.versioneye.com/user/projects/53efc9a613bb06cc6f0004b0/badge.svg?style=flat)](https://www.versioneye.com/user/projects/53efc9a613bb06cc6f0004b0)
-
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/0663136a-6dde-4159-bc96-d1749599dca4/big.png)](https://insight.sensiolabs.com/projects/0663136a-6dde-4159-bc96-d1749599dca4)
+###Forked from [vinelab/http on github.org](https://github.com/Vinelab/http)
 
 # http://Client
 
@@ -12,14 +8,14 @@ A smart and simple HTTP client for sending and recieving JSON and XML.
 
 ### Composer
 
-- `"vinelab/http": "dev-master"` or refer to [vinelab/http on packagist.org](https://packagist.org/packages/vinelab/http) for the latest version installation instructions.
+- `"jenchik/http": "dev-master"` for the latest version installation instructions.
 
 ```php
 // change this to point correctly according
 // to your folder structure.
 require './vendor/autoload.php';
 
-use Vinelab\Http\Client as HttpClient;
+use Spc\Http\Client as HttpClient;
 
 $client = new HttpClient;
 
@@ -30,9 +26,9 @@ var_dump($response->json());
 
 ### Laravel
 
-Edit **app.php** and add ```'Vinelab\Http\HttpServiceProvider',``` to the ```'providers'``` array.
+Edit **app.php** and add ```'Spc\Http\HttpServiceProvider',``` to the ```'providers'``` array.
 
-It will automatically alias itself as **HttpClient** so no need to alias it in your **app.php**, unless you would like to customize it - in that case edit your **'aliases'** in **app.php** adding ``` 'MyHttp'	  => 'Vinelab\Http\Facades\Client',```
+It will automatically alias itself as **HttpClient** so no need to alias it in your **app.php**, unless you would like to customize it - in that case edit your **'aliases'** in **app.php** adding ``` 'MyHttp'	  => 'Spc\Http\Facades\Client',```
 
 ## Usage
 

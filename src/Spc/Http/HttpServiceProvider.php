@@ -1,9 +1,11 @@
-<?php namespace Vinelab\Http;
+<?php
+
+namespace Spc\Http;
 
 use Illuminate\Support\ServiceProvider;
 
-class HttpServiceProvider extends ServiceProvider {
-
+class HttpServiceProvider extends ServiceProvider
+{
 	/**
 	 * Indicates if loading of the provider is deferred.
 	 *
@@ -18,14 +20,14 @@ class HttpServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$this->app['vinelab.httpclient'] = $this->app->share(function($app){
+		$this->app['spc.httpclient'] = $this->app->share(function($app){
 			return new Client;
 		});
 
 		$this->app->booting(function() {
 
 			$loader = \Illuminate\Foundation\AliasLoader::getInstance();
-			$loader->alias('HttpClient', 'Vinelab\Http\Facades\Client');
+			$loader->alias('HttpClient', 'Spc\Http\Facades\Client');
 		});
 	}
 
@@ -38,5 +40,4 @@ class HttpServiceProvider extends ServiceProvider {
 	{
 		return array();
 	}
-
 }

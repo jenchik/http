@@ -1,4 +1,6 @@
-<?php namespace Vinelab\Http\Tests\Server;
+<?php
+
+namespace Spc\Http\Tests\Server;
 
 if (isset($_SERVER['HTTP_CONTENT_TYPE']) and $_SERVER['HTTP_CONTENT_TYPE'] === 'application/json')
 {

@@ -21,10 +21,9 @@
 	},
 
 	"autoload": {
-
-		"psr-0": {
-			"Vinelab\\Http": "src/"
-		}
+        "psr-4": {
+             "Spc\\Http": "src/Http/"
+        }
 	},
 	"minimum-stability": "stable"
 }

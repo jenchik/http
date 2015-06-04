@@ -25,5 +25,5 @@
              "Spc\\Http\\": "src/Http/"
         }
 	},
-	"minimum-stability": "stable"
+	"minimum-stability": "dev"
 }

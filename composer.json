@@ -22,7 +22,7 @@
 
 	"autoload": {
         "psr-4": {
-             "Spc\\Http\\": "src/Http/"
+             "Spc\\Http\\": "src/Spc/Http/"
         }
 	},
 	"minimum-stability": "dev"
